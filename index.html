@@ -1,1 +1,244 @@
-Hello world!
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Jean Dupont</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    .profile-pic {
+      flex: 1;
+      max-width: 120px;
+    }
+
+    .profile-pic img {
+      width: 100%;
+      border-radius: 50%;
+    }
+
+    .name-title {
+      flex: 2;
+      text-align: center;
+    }
+
+    .name-title h1 {
+      font-size: 2rem;
+    }
+
+    .name-title p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .contact-info {
+      flex: 1;
+      text-align: right;
+      font-size: 0.9rem;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      color: #1a73e8;
+      border-bottom: 2px solid #1a73e8;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+    }
+
+    .education, .experience, .skills, .languages {
+      padding-left: 15px;
+    }
+
+    .item {
+      margin-bottom: 15px;
+    }
+
+    .item .date {
+      font-weight: bold;
+      color: #1a73e8;
+    }
+
+    .item .title {
+      font-weight: 500;
+      margin-top: 5px;
+    }
+
+    .item .location, .item .comments {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .languages ul, .skills ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .skills .category {
+      margin-bottom: 10px;
+    }
+
+    .skills .category h4 {
+      margin-bottom: 5px;
+      color: #444;
+    }
+
+    @media(max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .contact-info {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .name-title {
+        order: -1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Header -->
+  <div class="header">
+    <div class="profile-pic">
+      <img src="https://images.pexels.com/photos/2071882/pexels-photo-2071882.jpeg" alt="Photo de profil">
+    </div>
+    <div class="name-title">
+      <h1>Jean Dupont</h1>
+      <p>Développeur Full Stack</p>
+    </div>
+    <div class="contact-info">
+      <p><i class="fas fa-map-marker-alt"></i> Paris, France</p>
+      <p><i class="fas fa-phone"></i> +33 6 XX XX XX XX</p>
+      <p><i class="fas fa-envelope"></i> jean.dupont@email.com</p>
+      <p><i class="fas fa-birthday-cake"></i> 29 ans</p>
+    </div>
+  </div>
+
+  <!-- Formation -->
+  <div class="section">
+    <h2>Formation</h2>
+    <div class="education">
+      <div class="item">
+        <div class="date">2020</div>
+        <div class="title">Master Informatique - Université Paris-Saclay</div>
+        <div class="comments">Spécialisation en développement web et systèmes distribués</div>
+      </div>
+      <div class="item">
+        <div class="date">2018</div>
+        <div class="title">Licence Informatique - Université de Bordeaux</div>
+        <div class="comments">Projet de fin d'études sur les architectures microservices</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Expérience -->
+  <div class="section">
+    <h2>Expérience professionnelle</h2>
+    <div class="experience">
+      <div class="item">
+        <div class="date">2022 - 2024</div>
+        <div class="title">Développeur Full Stack - Capgemini, Paris</div>
+        <div class="location">Projet interne et client : React, Node.js, PostgreSQL</div>
+        <div class="comments">Conception et développement d'une plateforme B2B. Mise en place d'intégration continue.</div>
+      </div>
+      <div class="item">
+        <div class="date">2020 - 2022</div>
+        <div class="title">Développeur Web - Freelance</div>
+        <div class="location">Création de sites vitrines et e-commerce (WordPress, Laravel)</div>
+        <div class="comments">Gestion de projets de A à Z, relation client, maintenance et SEO.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Langues -->
+  <div class="section">
+    <h2>Langues</h2>
+    <div class="languages">
+      <ul>
+        <li><strong>Français :</strong> Natif</li>
+        <li><strong>Anglais :</strong> TOEIC 990</li>
+        <li><strong>Espagnol :</strong> Intermédiaire</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Compétences -->
+  <div class="section">
+    <h2>Compétences</h2>
+    <div class="skills">
+      <div class="category">
+        <h4>Langages de programmation</h4>
+        <ul>
+          <li>JavaScript (ES6+), TypeScript</li>
+          <li>Python, Java, PHP</li>
+        </ul>
+      </div>
+      <div class="category">
+        <h4>Frameworks & Bibliothèques</h4>
+        <ul>
+          <li>React, Next.js, Vue.js</li>
+          <li>Node.js, Express</li>
+        </ul>
+      </div>
+      <div class="category">
+        <h4>Bases de données</h4>
+        <ul>
+          <li>PostgreSQL, MySQL, MongoDB</li>
+        </ul>
+      </div>
+      <div class="category">
+        <h4>Outils & DevOps</h4>
+        <ul>
+          <li>Git, Docker, Jenkins, GitHub Actions</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
