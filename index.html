@@ -5,22 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Doe - CV</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
     <div class="container">
         <div id="cv-content" class="cv-wrapper">
-            <!-- Export Button -->
-            <button id="export-btn" class="export-btn" onclick="exportToPDF()">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                    <polyline points="7,10 12,15 17,10"/>
-                    <line x1="12" y1="15" x2="12" y2="3"/>
-                </svg>
-                <span id="export-text">Export PDF</span>
-            </button>
-
             <!-- Header Section -->
             <header class="header">
                 <div class="header-content">
@@ -374,7 +362,5 @@
             </main>
         </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
